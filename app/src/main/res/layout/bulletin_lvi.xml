@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="8.5dp"
+            android:text="핫서머"
+            android:textSize="17.5sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="35.5dp"
+            android:text="덥다 더버"
+            android:textSize="10sp"
+            android:textColor="#464646" />
+
+        <TextView
+            android:id="@+id/who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:layout_marginStart="8.5dp"
+            android:text="어사화"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/when"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7.5sp"
+            android:textColor="#000000"
+            android:layout_marginStart="321.5dp"
+            android:layout_marginTop="56.5dp"
+            android:text="PM07:15" />
+    </RelativeLayout>
+
+
+</LinearLayout>

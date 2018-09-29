@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="27dp"
+        android:textSize="12.5sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="-2.5sp"
+        android:text="이메일" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="12.5sp"
+        android:textColor="#cc5c5b5b"
+        android:lineSpacingExtra="-2.5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="99.5dp"
+        android:text="비밀번호" />
+
+    <TextView
+        android:id="@+id/nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="172dp"
+        android:textSize="12.5sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="-2.5sp"
+        android:text="닉네임" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="0sp"
+        android:text="ex) usahwa@hanmail.net"
+        android:textColor="#cc5c5b5b"
+        android:textSize="10sp"/>
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="117.5dp"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="0sp"
+        android:text="8자리 이상 ~ 16자리 이하"
+        android:textColor="#cc5c5b5b"
+        android:textSize="10sp"/>
+
+    <RelativeLayout
+        android:id="@+id/goMain"
+        android:layout_width="295dp"
+        android:layout_height="39.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:layout_marginTop="263.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="확인" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goReg"
+        android:layout_width="295dp"
+        android:layout_height="39.5dp"
+        android:layout_marginTop="465dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="K           l             카카오톡으로 가입하기" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nick"
+        android:layout_marginStart="15dp"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="0sp"
+        android:text="2자리 이상 ~ 8자리 이하"
+        android:textColor="#cc5c5b5b"
+        android:textSize="10sp" />
+
+</RelativeLayout>

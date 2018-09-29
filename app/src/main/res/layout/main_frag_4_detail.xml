@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4aaff6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_logo"
+            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_gravity="left"
+            android:background="@drawable/logo"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="1234" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="315dp"
+            android:layout_height="190.5dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/ttukseom_home"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            app:srcCompat="@drawable/activity_none" />
+        <ImageView
+            android:id="@+id/imageView_community"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            app:srcCompat="@drawable/forums" />
+        <ImageView
+            android:id="@+id/imageView_badal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            app:srcCompat="@drawable/outbox" />
+        <ImageView
+            android:id="@+id/imageView_map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/map" />
+        <ImageView
+            android:id="@+id/imageView_call"
+            android:layout_marginRight="4dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/call2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:text="액티비티"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:text="커뮤니티"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:text="배달"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:text="지도"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="문의전화"/>
+    </LinearLayout>
+
+
+</LinearLayout>

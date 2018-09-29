@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp">
+
+        <TextView
+            android:id="@+id/where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="-4sp"/>
+        <ImageView
+            android:layout_width="7.5dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="345.5dp"
+            android:layout_marginTop="17.5dp"
+            android:src="@drawable/go_bulletin"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

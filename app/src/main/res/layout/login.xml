@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="27dp"
+        android:textSize="12.5sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="-2.5sp"
+        android:text="이메일" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="12.5sp"
+        android:textColor="#cc5c5b5b"
+        android:lineSpacingExtra="-2.5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="99.5dp"
+        android:text="비밀번호" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="510dp"
+        android:textSize="10sp"
+        android:textColor="#707070"
+        android:lineSpacingExtra="4.5sp"
+        android:text="혹시, 한강이 처음이신가요?" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="4.5sp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="510dp"
+        android:text="회원가입하기" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:ems="16"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="117.5dp"
+        android:ems="16"
+        android:inputType="textPassword" />
+
+    <RelativeLayout
+        android:id="@+id/goMain"
+        android:layout_width="295dp"
+        android:layout_height="39.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:layout_marginTop="191dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="확인" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goReg"
+        android:layout_width="295dp"
+        android:layout_height="39.5dp"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="K           l             카카오톡으로 가입하기" />
+    </RelativeLayout>
+</RelativeLayout>

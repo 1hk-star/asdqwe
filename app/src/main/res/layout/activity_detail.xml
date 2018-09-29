@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="94.5dp"
+        android:layout_y="40.5dp"
+        android:text="한강 어른이 놀이터"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_x="325dp"
+        android:layout_y="45.5dp"
+        android:background="@drawable/like" />
+    
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="215dp"
+        android:background="@drawable/ttukseom_home"
+        android:layout_x="15dp"
+        android:layout_y="80dp"/>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="105dp"
+        android:layout_x="15dp"
+        android:layout_y="306dp"
+        android:background="#f3f3f3"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:background="@drawable/locate"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="여의도 공원"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:background="@drawable/date"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="8.11.토 ~ 8.12.일"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:background="@drawable/time"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="15:00 ~ 21:00"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:background="@drawable/call2"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="- 카카오톡 한강어른이놀이터 검색"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="422dp"
+        android:background="#f3f3f3"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="10dp"
+        android:text="어린 시절 내가 가장 자신 있던 놀이는?\n공기놀이, 팽이돌리기, 딱지치기, 한발뛰기\n어린 시절 내가 가장 자신 있던 놀이는?\n공기놀이, 팽이돌리기, 딱지치기, 한발뛰기\n어린 시절 내가 가장 자신 있던 놀이는?\n공기놀이, 팽이돌리기, 딱지치기, 한발뛰기\n어린 시절 내가 가장 자신 있던 놀이는?\n공기놀이, 팽이돌리기, 딱지치기, 한발뛰기\n"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+
+</AbsoluteLayout>

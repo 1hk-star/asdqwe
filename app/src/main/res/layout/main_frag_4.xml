@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <AbsoluteLayout
+        android:id="@+id/imageView"
+        android:layout_width="348dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/hangang_map">
+
+        <TextView
+            android:id="@+id/sel_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="241dp"
+            android:layout_y="46dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="뚝섬"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="202dp"
+            android:layout_y="83dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="잠원"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="312dp"
+            android:layout_y="34dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="광나루"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_10"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="284dp"
+            android:layout_y="78dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="잠실"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="173dp"
+            android:layout_y="95dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="반포"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_9"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="144dp"
+            android:layout_y="68dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="이촌"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="92dp"
+            android:layout_y="54dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="망원"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="62dp"
+            android:layout_y="35dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="난지"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="89dp"
+            android:layout_y="88dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="여의도"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="7dp"
+            android:layout_y="71dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="강서"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/sel_7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_x="40dp"
+            android:layout_y="74dp"
+            android:background="@drawable/hangang_map3"
+            android:gravity="center_vertical"
+            android:text="양화"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+    </AbsoluteLayout>
+
+
+</LinearLayout>

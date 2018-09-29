@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70e4e3e3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginRight="10dp"
+        android:layout_x="0dp"
+        android:layout_y="25dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/inform_none" />
+
+        <TextView
+            android:id="@+id/nick"
+            android:layout_width="294dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="어사화"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="130dp"
+        android:text="설정"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="150dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="262dp">
+
+
+        <TextView
+            android:id="@+id/textView_logout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="로그아웃"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+
+    </LinearLayout>
+</AbsoluteLayout>

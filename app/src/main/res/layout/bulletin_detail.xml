@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4aaff6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_logo"
+            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_gravity="left"
+            android:background="@drawable/logo"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="글보기" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_y="65dp"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="294dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="어사화"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="17dp"
+        android:layout_y="110dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘 날씨 더워요 \n끈적끈적끈적끈적 힘들어요"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/content"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/home_yes" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dea5a2a2"
+        android:layout_y="285dp"/>
+    <ListView
+        android:id="@+id/comment"
+        android:layout_y="286dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/content">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_y="535dp"
+        android:background="#70e4e3e3"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="21.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/comment_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="댓글쓰기" />
+    </LinearLayout>
+
+</AbsoluteLayout>

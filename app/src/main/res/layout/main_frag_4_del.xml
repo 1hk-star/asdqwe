@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4aaff6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_logo"
+            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_gravity="left"
+            android:background="@drawable/logo"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="1234" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="142.8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/del">
+
+        <LinearLayout
+            android:layout_width="203.8dp"
+            android:layout_height="match_parent"
+            android:background="#ffc42c"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="두둠 치킨"
+                android:textAlignment="textStart"
+                android:textColor="#ffffff"
+                android:textSize="35sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="한마리 시키면 한마리 더\n후라이드 치킨 1+1"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="현금 결제시"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp" android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/dot"/>
+        <TextView
+            android:layout_width="128.2dp"
+            android:layout_height="142.8dp"
+            android:text="2018.09.01 ~ 2018.09.30\n\n\n해당지점\n뚝섬점, 망원점, 이촌점"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="142.8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/del">
+
+        <LinearLayout
+            android:layout_width="203.8dp"
+            android:layout_height="match_parent"
+            android:background="#c61818"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="핏자피자"
+                android:textAlignment="textStart"
+                android:textColor="#ffffff"
+                android:textSize="35sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="패밀리 사이즈 주문 시\nR 사이즈 한 판 50%"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="130.2dp"
+            android:layout_height="142.8dp"
+            android:text="2018.10.1 ~ 2018.10.30\n\n\n해당지점\n난지점, 뚝섬점, 양화점"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="142.8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/del">
+
+        <LinearLayout
+            android:layout_width="203.8dp"
+            android:layout_height="match_parent"
+            android:background="#bf784f"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="민가네 족발"
+                android:textAlignment="textStart"
+                android:textColor="#ffffff"
+                android:textSize="35sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="족발 3인분 주문 시\n보쌈 1인분 증정"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="현금 결제시"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp" android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="130.2dp"
+            android:layout_height="142.8dp"
+            android:text="2018.09.01 ~ 2018.10.30\n\n\n해당지점\n잠원점, 잠실점, 광나루"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
