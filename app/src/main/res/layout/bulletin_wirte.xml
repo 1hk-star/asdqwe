@@ -61,7 +61,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/camera"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/camera"
@@ -94,15 +94,16 @@
         android:layout_height="match_parent"
         android:background="#5cdcdcdc">
 
-        <TextView
+        <ImageView
+            android:id="@+id/pic"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="11dp"
-            android:text="+"
-            android:textAlignment="center"
+            android:background="@drawable/dot"
             android:gravity="center_vertical"
-            android:background="@drawable/dot"/>
+            android:text="+"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 

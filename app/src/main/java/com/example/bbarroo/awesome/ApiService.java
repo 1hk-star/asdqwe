@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 public interface ApiService {
     //API Gateway Stage URL
     //호출할 기본적인 위치랄까?
-    public static final String API_URL = "http://101.235.59.85:8080/";
+    public static final String API_URL = "http://101.235.83.10:8080/";
 
     //특정 uri에 접근해서 데이터를 주고 받는걸 restful api라고 함
     //rest에 대한 설명, http://blog.naver.com/PostView.nhn?blogId=complusblog&logNo=220986337770
@@ -37,6 +37,22 @@ public interface ApiService {
     //게시물 리스트 가져오기
     @GET("board/board_list.php")
     Call<ResponseBody> get_board_list(@Query("subject") int subject, @Query("page") int page);
+
+    //액티비티 좋아요
+    //like 1은 좋아요 증가
+    //그외는 좋아요 감소
+    @GET("activity/like.php")
+    Call<ResponseBody> get_like(@Query("_id") int subject, @Query("like") int page);
+
+    //첫번째화면 액티비티 리스트
+    @POST("activity/list_first.php")
+    Call<ResponseBody> post_act_first();
+
+    //액티비티 디테일
+    @GET("activity/detail.php")
+    Call<ResponseBody> get_act_detail(@Query("_id") int _id);
+
+
 
     @FormUrlEncoded
     @PUT("v1/members/{path}/")

@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="94.5dp"
@@ -22,6 +22,7 @@
         android:background="@drawable/like" />
     
     <ImageView
+        android:id="@+id/img"
         android:layout_width="330dp"
         android:layout_height="215dp"
         android:background="@drawable/ttukseom_home"
@@ -30,7 +31,7 @@
 
     <LinearLayout
         android:layout_width="330dp"
-        android:layout_height="105dp"
+        android:layout_height="60dp"
         android:layout_x="15dp"
         android:layout_y="306dp"
         android:background="#f3f3f3"
@@ -50,6 +51,7 @@
                 android:layout_gravity="center_vertical"/>
 
             <TextView
+                android:id="@+id/where"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
@@ -72,6 +74,7 @@
                 android:layout_gravity="center_vertical"/>
 
             <TextView
+                android:id="@+id/when"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
@@ -83,57 +86,15 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp">
 
-            <ImageView
-                android:layout_width="8dp"
-                android:layout_height="13dp"
-                android:background="@drawable/time"
-                android:layout_marginRight="13dp"
-                android:layout_gravity="center_vertical"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:gravity="center_vertical"
-                android:text="15:00 ~ 21:00"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp">
-
-            <ImageView
-                android:layout_width="8dp"
-                android:layout_height="13dp"
-                android:background="@drawable/call2"
-                android:layout_marginRight="13dp"
-                android:layout_gravity="center_vertical"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:gravity="center_vertical"
-                android:text="- 카카오톡 한강어른이놀이터 검색"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/content"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_x="15dp"
-        android:layout_y="422dp"
+        android:layout_y="380dp"
         android:background="#f3f3f3"
         android:lineSpacingExtra="2dp"
         android:paddingBottom="10dp"

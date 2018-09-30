@@ -19,6 +19,10 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.gson.JsonParser;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.w3c.dom.Text;
 
 import okhttp3.OkHttpClient;
@@ -33,6 +37,8 @@ public class Bulletin_Main extends AppCompatActivity {
     Toolbar toolbar;
     int sel;
     Button btn_write;
+    String res;
+    JsonParser jp=new JsonParser();
 
     //retrofit이라는 라이브러리 사용 준비
     Retrofit retrofit;
@@ -64,11 +70,11 @@ public class Bulletin_Main extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar_title.setText(name);
-       // getSupportActionBar().setTitle(name);
-      //  actionBar.setTitle(name);
+        // getSupportActionBar().setTitle(name);
+        //  actionBar.setTitle(name);
 
 
-        Bulletin_LVA adapter = new Bulletin_LVA();
+        final Bulletin_LVA adapter = new Bulletin_LVA();
         listview.setAdapter(adapter);
 
 
@@ -85,8 +91,24 @@ public class Bulletin_Main extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    String res = response.body().string();
-                    Log.i("Test2", res);
+
+                    res = response.body().string();
+                    //Log.i("Test2", res);
+
+                    JSONArray LVIarr=new JSONArray(res);
+                    for(int i=0; i<LVIarr.length(); i++){
+                        JSONObject lvi=LVIarr.getJSONObject(i);
+                        String title=lvi.getString("title");
+                        String what=lvi.getString("content");
+                        String who=lvi.getString("nic");
+                        String when=lvi.getString("time");
+
+                        Log.i("출력", title+what+who+when);
+                        adapter.addItem(title,what,who,when);
+                    }
+
+                    adapter.notifyDataSetChanged();
+
 
 
                     ///Intent intent=new Intent(getActivity(),MainActivity.class);
@@ -115,7 +137,7 @@ public class Bulletin_Main extends AppCompatActivity {
         adapter.addItem("오늘 날씨 더워요","끈적끈적끈적 힘들어요","어사화","PM 07:15");
         adapter.addItem("핫섬머","집밖으로 안나오는게 승자","뀨뀨","PM 07:34");*/
 
-       listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(Bulletin_Main.this, Bulletin_comment_main.class);
@@ -124,13 +146,13 @@ public class Bulletin_Main extends AppCompatActivity {
             }
         });
 
-       btn_write.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent intent=new Intent(Bulletin_Main.this, Bulletin_write.class);
-               intent.putExtra("name",sel);
-               startActivity(intent);
-           }
-       });
+        btn_write.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Bulletin_Main.this, Bulletin_write.class);
+                intent.putExtra("name",sel);
+                startActivity(intent);
+            }
+        });
     }
 }
