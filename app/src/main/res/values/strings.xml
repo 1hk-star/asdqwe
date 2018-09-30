@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Awesome</string>
+    <string name="title_activity_mfof_map">Map</string>
 </resources>

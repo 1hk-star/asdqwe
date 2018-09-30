@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 
 public class MFOF_detail extends AppCompatActivity {
-        Toolbar toolbar;
-        int sel;
-        protected void onCreate(Bundle savedInstanceState) {
+    Toolbar toolbar;
+    int sel;
+    protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_frag_4_detail);
@@ -44,7 +44,7 @@ public class MFOF_detail extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         //getSupportActionBar().setTitle(name);
-            title.setText(name);
+        title.setText(name);
 
         if(name.equals("강서"))
             img_main.setBackground(ContextCompat.getDrawable(this, R.drawable.gangseo_home));
@@ -69,7 +69,7 @@ public class MFOF_detail extends AppCompatActivity {
         else if(name.equals("잠원"))
             img_main.setBackground(ContextCompat.getDrawable(this, R.drawable.jamwon_home));
 
-            img_com.setOnClickListener(new View.OnClickListener() {
+        img_com.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MFOF_detail.this,Bulletin_Main.class);
@@ -85,15 +85,22 @@ public class MFOF_detail extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-            img_bad.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent=new Intent(MFOF_detail.this,MFOF_del.class);
-                    intent.putExtra("name", sel);
-                    startActivity(intent);
-                }
-            });
+        img_bad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MFOF_detail.this,MFOF_del.class);
+                intent.putExtra("name", sel);
+                startActivity(intent);
+            }
+        });
+       /* img_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MFOF_detail.this, MFOF_map.class);
+                intent.putExtra("name", sel);
+                startActivity(intent);
+            }
+        });*/
 
     }
 }
-
